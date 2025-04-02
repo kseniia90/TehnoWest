@@ -1,0 +1,486 @@
+<style type="text/css">
+.layout-aside,
+    .main-h,
+    .heading.heading--xl {
+        display: none;
+    }
+    
+    .wrapper, .layout-wrap {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .breadcrumbs,
+    .footer__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .breadcrumbs {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        .breadcrumbs,
+        .footer__container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    
+    .layout {
+        margin: 0;
+    }
+    
+    .header  {
+        margin-bottom: 0;
+    }
+    
+    .layout-main-inner {
+        padding-left: 0;
+    }
+    
+    * {
+    box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
+.tw-wrapper a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tw-wrapper {
+    font-family: 'Roboto';
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 120% !important;
+    min-height: 100dvh;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.tw-container {
+    min-height: 100%;
+    /* max-width: 1470px;  */
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-main-h {
+    font-size: 48px !important;
+    line-height: 100% !important;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.tw-del .tw-main-h {
+    margin-bottom: 50px !important;
+}
+
+.tw-yellow {
+    color: #FFBF00 !important;
+}
+
+.tw-del-subtitle {
+    font-size: 42px !important;
+    font-weight: 700;
+    line-height: 100% !important;
+    margin: 0 auto 50px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tw-subtitle {
+    font-size: 32px !important;
+    font-weight: 700;
+    line-height: 38px !important;
+    margin: 0 !important;
+}
+
+.tw-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    max-width: 1325px;
+    padding: 0 130px;
+    margin: 0 auto 100px;
+}
+
+.tw-list-item {
+    position: relative;
+}
+
+.tw-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 50px;
+    background: rgba(160, 160, 160, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+}
+
+.tw-list-item>img {
+    position: absolute;
+    top: 50%;
+    right: 96%;
+    transform: translateY(-50%);
+    width: auto;
+    z-index: 1;
+}
+
+.tw-list-item:nth-child(even)>img {
+    right: auto;
+    left: 96%;
+}
+
+.tw-list-item-1>img,
+.tw-list-item-4>img {
+    z-index: -1;
+}
+
+.tw-list-item-1>img,
+.tw-list-item-2>img,
+.tw-list-item-3>img {
+    top: auto;
+    bottom: 5px;
+    transform: translateY(0);
+}
+
+.tw-list-item-4>img {
+    transform: translateY(-65%);
+}
+
+.tw-list-item-2>img {
+    bottom: 15px;
+}
+
+.tw-list-item .tw-subtitle>img {
+    vertical-align: middle;
+    margin: 0 0 0 20px;
+}
+
+.tw-del-block-2 {
+    margin-bottom: 24px;
+}
+
+.tw-del-block-2 .tw-del-subtitle {
+    margin: 0 auto 30px !important;
+}
+
+.tw-del-row {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+
+.tw-del-col-1 {
+    padding: 80px 0;
+    padding-right: 25px;
+}
+
+.tw-del-col-2 {
+    padding-left: 25px;
+}
+
+.tw-del-col-container {
+    padding: 25px 50px;
+    border-radius: 0 20px 20px 0;
+    color: #ffffff;
+    background: #444444;
+}
+
+.tw-del-col-1 .tw-del-col-content {
+    position: relative;
+    max-width: 540px;
+    margin: 0 0 0 auto;
+    font-size: 32px !important;
+    line-height: 38px !important;
+}
+
+.tw-del-col-1 .tw-del-col-content>img {
+    position: absolute;
+    bottom: 100%;
+    left: -11%;
+}
+
+.tw-del-col-2 {
+    position: relative;
+}
+
+.tw-del-col-2 .tw-np-img {
+    position: absolute;
+    left: 30px;
+    top: 15%;
+}
+
+.tw-del-col-2 .tw-big-img {
+    width: 100%;
+    height: 100%;
+    margin-top: -80px;
+    object-fit: cover;
+}
+
+@media (max-width: 1300px) {
+
+    .tw-list-item>img {
+        width: auto;
+        height: 150px;
+        right: 97%;
+    }
+
+    .tw-list-item:nth-child(even)>img {
+        left: 97%;
+    }
+
+    .tw-list-item-1>img,
+    .tw-list-item-2>img,
+    .tw-list-item-3>img {
+        bottom: 15px;
+    }
+
+    .tw-del-col-1 .tw-del-col-content>img {
+        width: 100%;
+        max-width: 35%;
+        min-width: 140px;
+        height: auto;
+    }
+
+    .tw-del-col-2 .tw-np-img {
+        left: 25px;
+        top: 7%;
+        width: 100%;
+        max-width: 35%;
+        height: auto;
+    }
+
+    .tw-del-col-2 .tw-big-img {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tw-wrapper {
+        font-size: 18px !important;
+    }
+
+    .tw-main-h {
+        font-size: 40px !important;
+    }
+
+    .tw-del .tw-main-h {
+        margin-bottom: 40px !important;
+    }
+
+    .tw-del-subtitle {
+        font-size: 35px !important;
+    }
+
+    .tw-subtitle {
+        font-size: 26px !important;
+        line-height: 30px !important;
+    }
+
+    .tw-list {
+        gap: 40px;
+        padding: 0 20px;
+        margin: 0 auto 60px;
+    }
+
+    .tw-item-content {
+        gap: 10px;
+        padding: 30px 25px;
+        text-align: center;
+    }
+
+    .tw-list-item .tw-subtitle>img {
+        margin: 0 0 0 10px;
+    }
+
+    .tw-del-block-2 {
+        margin-bottom: 40px;
+    }
+
+    .tw-del-row {
+        grid-template-columns: 1fr;
+    }
+
+    .tw-del-col-1 {
+        padding: 80px 0 40px;
+        padding-right: 0;
+    }
+
+    .tw-del-col-2 {
+        padding-left: 0;
+    }
+
+    .tw-del-col-container {
+        padding: 25px 20px;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .tw-item-content .tw-yellow {
+        display: block;
+    }
+
+    .tw-del-col-1 .tw-del-col-content {
+        max-width: 100%;
+        margin: 0;
+        font-size: 26px !important;
+        line-height: 28px !important;
+    }
+
+    .tw-del-col-1 .tw-del-col-content>img {
+        max-width: 125px;
+        min-width: auto;
+        height: auto;
+        left: 0;
+    }
+
+    .tw-del-col-2 .tw-np-img {
+        left: 20px;
+        top: 0;
+    }
+
+    .tw-list-item>img {
+        height: 110px;
+        right: auto;
+        top: auto;
+        left: -20px;
+        bottom: 70%;
+        transform: none !important;
+        z-index: 1;
+    }
+
+    .tw-list-item:nth-child(even)>img {
+        left: auto;
+        right: -20px;
+    }
+
+    .tw-list-item-1,
+    .tw-list-item-2,
+    .tw-list-item-3,
+    .tw-list-item-4 {
+        z-index: -1;
+    }
+
+    .tw-list-item-2>img,
+    .tw-list-item-5>img {
+        z-index: -1;
+    }
+
+}
+</style>
+
+
+<main>
+    <div class="tw-wrapper">
+        <div class="tw-container tw-del">
+
+            <h1 class="tw-main-h">Доставка и оплата</h1>
+
+            <div class="tw-del-block tw-del-block-1">
+
+                <h2 class="tw-del-subtitle">Оплата</h2>
+
+                <div class="tw-list">
+
+                    <div class="tw-list-item tw-list-item-1">
+                        <img src="/content/uploads/images/tw_li_1.png" alt="1" width="130" height="198">
+                        <div class="tw-item-content">
+                            <h3 class="tw-subtitle">Наложенный платеж</h3>
+                            <p class="tw-list-desc">Товар оплачивается при получении <b>в отделении Новой Почты</b>
+                                (Тариф Новой Почты 2% от суммы + 20 грн)</p>
+                        </div>
+                    </div>
+
+                    <div class="tw-list-item tw-list-item-2">
+                        <img src="/content/uploads/images/tw_li_2.png" alt="2" width="158" height="198">
+                        <div class="tw-item-content">
+                            <h3 class="tw-subtitle">Оплата на расчетный счет</h3>
+                            <p class="tw-list-desc">Реквизиты уточняйте у менеджера</p>
+                        </div>
+                    </div>
+
+                    <div class="tw-list-item tw-list-item-3">
+                        <img src="/content/uploads/images/tw_li_3.png" alt="3" width="153" height="198">
+                        <div class="tw-item-content">
+                            <h3 class="tw-subtitle">Оплата онлайн банковской картой</h3>
+                            <p class="tw-list-desc"><b>Monobank</b> или<b>LiqPay</b></p>
+                        </div>
+                    </div>
+
+                    <div class="tw-list-item tw-list-item-4">
+                        <img src="/content/uploads/images/tw_li_4.png" alt="4" width="157" height="198">
+                        <div class="tw-item-content">
+                            <h3 class="tw-subtitle">Покупка частями от<span class="tw-yellow">Monobank</span>
+                                <img src="/content/uploads/images/tw_mb.png" alt="mono" width="37" height="38"></h3>
+                        </div>
+                    </div>
+
+                    <div class="tw-list-item tw-list-item-5">
+                        <img src="/content/uploads/images/tw_li_5.png" alt="5" width="150" height="198">
+                        <div class="tw-item-content">
+                            <h3 class="tw-subtitle">«Оплата частями» от <span class="tw-yellow">ПриватБанк</span>
+                                <img src="/content/uploads/images/tw_pb.png" alt="mono" width="40" height="38"></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tw-del-block tw-del-block-2">
+
+                <h2 class="tw-del-subtitle">доставка</h2>
+
+                <div class="tw-del-row">
+                    <div class="tw-del-col tw-del-col-1">
+                        <div class="tw-del-col-container">
+                            <div class="tw-del-col-content">
+                                <img src="/content/uploads/images/tw_del_1.png" alt="img" width="198" height="198">
+                                <p>Бесплатная курьерская и адресная доставка <span class="tw-yellow">Новой почтой</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tw-del-col tw-del-col-2">
+                        <img src="/content/uploads/images/tw_del_3.png" alt="img" class="tw-np-img" width="232" height="82">
+                        <img src="/content/uploads/images/tw_del_2.png" alt="img" class="tw-big-img" width="760" height="500">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</main>

@@ -1,0 +1,384 @@
+<style type="text/css">.layout-aside,
+    .main-h,
+    .heading.heading--xl {
+        display: none;
+    }
+    
+    .wrapper, .layout-wrap {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .breadcrumbs,
+    .footer__container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .breadcrumbs {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        .breadcrumbs,
+        .footer__container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    
+    .layout {
+        margin: 0;
+    }
+    
+    .header  {
+        margin-bottom: 0;
+    }
+    
+    .layout-main-inner {
+        padding-left: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul {
+        margin: 0;
+    }
+    
+    .tw-wrapper a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid transparent !important;
+    }
+    
+    .tw-wrapper {
+        font-family: 'Roboto';
+        font-size: 20px !important;
+        font-weight: 400;
+        line-height: 100% !important;
+        min-height: 100dvh;
+        margin: 0 auto;
+        width: 100%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    
+    .tw-container {
+        min-height: 100%;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tw-main-h {
+        font-size: 48px !important;
+        line-height: 100% !important;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 !important;
+    }
+    
+    .tw-yellow {
+        color: #FFBF00 !important;
+    }
+    
+    .tw-subtitle {
+        font-size: 32px !important;
+        font-weight: 700;
+        line-height: 100% !important;
+        margin: 0 !important;
+    }
+    
+    .tw-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 20px !important;
+        font-weight: 700;
+        padding: 15px 30px;
+        color: #fff !important;
+        background: #FFBF00;
+        border: 1px solid #FFBF00 !important;
+        box-shadow: none;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all .2s ease;
+    }
+    
+    .tw-btn:hover,
+    .tw-btn:focus {
+        background: #fff;
+        border: 1px solid #FFBF00 !important;
+        color: #FFBF00 !important;
+    }
+    
+    .tw-block {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .tw-block-1 {
+        padding: 10px 20px;
+    }
+    
+    .tw-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 50px 0;
+    }
+    
+    .tw-lin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tw-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .tw-block-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 57px 20px;
+        color: #ffffff;
+        background-color: #151515;
+    }
+    
+    .tw-block-3,
+    .tw-block-4,
+    .tw-block-5,
+    .tw-block-6 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    
+    .tw-block-3,
+    .tw-block-5 {
+        position: relative;
+    }
+    
+    .tw-block-3 .tw-subtitle,
+    .tw-block-4 .tw-subtitle,
+    .tw-block-5 .tw-subtitle {
+        margin-bottom: 20px !important;
+    }
+    
+    .tw-block-3 .tw-bg {
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .tw-block-4 {
+        color: #ffffff;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/content/uploads/images/tw_banner-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .tw-block-5 .tw-bg {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        transform: rotate(5deg);
+        z-index: -1;
+    }
+    
+    .tw-block-6 {
+        color: #ffffff;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/content/uploads/images/tw_banner-2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    @media (max-width:1000px) {
+        .tw-block-3 .tw-bg {
+            width: 218px;
+            height: 218px;
+            right: -40px;
+            z-index: 1;
+        }
+    
+        .tw-block-5 .tw-bg {
+            width: 250px;
+            height: 250px;
+            top: auto;
+            bottom: -20px;
+            left: -15px;
+            transform: rotate(-30deg);
+        }
+    }
+    
+    @media (max-width: 768px) { 
+        .breadcrumbs {
+        padding-top: 40px;
+    }
+
+    .catalog__banners {
+        margin: 0;
+    }
+       
+    .tw-wrapper {
+        font-size: 18px !important;
+    }
+    
+    .tw-main-h {
+        font-size: 40px !important;
+    }
+    
+    .tw-subtitle {
+        font-size: 26px !important;
+    }
+    
+    .tw-btn {
+        font-size: 18px !important;
+    }
+    
+    .tw-row {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 40px 0;
+    }
+    
+    .tw-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .tw-block-1 {
+        padding-bottom: 0;
+    }
+    
+    .tw-block-2 {
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 40px 20px;
+        display: none;
+    }
+    
+    .tw-block-3,
+    .tw-block-4,
+    .tw-block-5,
+    .tw-block-6 {
+        gap: 40px;
+        padding: 80px 20px;
+        text-align: center;
+    }
+    
+    .tw-block-3 {
+        padding-top: 40px;
+    }
+    
+    .tw-block-5 .tw-bg {
+        width: 158px;
+        height: 158px;
+        top: auto;
+        bottom: -20px;
+        left: -15px;
+        transform: rotate(-30deg);
+    }
+    
+    }
+</style>
+<main>
+<div class="tw-wrapper">
+<div class="tw-container">
+<div class="tw-block tw-block-1">
+<h1 class="tw-main-h">Контакти</h1>
+
+<div class="tw-row"><a class="tw-link" href="tel:+380500550900"><span class="tw-col"><img alt="icon" class="tw-icon" height="80" loading="lazy" src="/content/uploads/images/tw_phone.svg" width="80" /> <span>050-055-09-00</span> </span> </a> <a class="tw-link" href="mailto:TehnoWest88@gmail.com"> <span class="tw-col"> <img alt="icon" class="tw-icon" height="80" loading="lazy" src="/content/uploads/images/tw_email.svg" width="80" /> <span>TehnoWest88@gmail.com</span> </span> </a></div>
+</div>
+
+<div class="tw-block tw-block-2">
+<p class="tw-subtitle">Передзвонити Вам?</p>
+
+<div class="tw-btn tw_call_me"><span>Замовити дзвінок</span></div>
+</div>
+
+<div class="tw-block tw-block-3"><img alt="icon" class="tw-icon" height="80" loading="lazy" src="/content/uploads/images/tw_viber.svg" width="80" />
+<div>
+<p class="tw-subtitle">Клацай у <a class="tw-yellow" href="viber:chat?number=%2B380500550900">Viber</a> &ndash; твій ноутбук на низькому старті!</p>
+
+<p class="tw-desc">Пиши запитання чи пропозиції &ndash; відповімо миттєво!</p>
+</div>
+<a class="tw-btn" href="viber:chat?number=%2B380500550900">Перейти у Viber</a> <img alt="img" class="tw-bg" height="456" loading="lazy" src="/content/uploads/images/tw_1.png" width="456" /></div>
+
+<div class="tw-block tw-block-4"><img alt="icon" class="tw-icon" height="80" loading="lazy" src="/content/uploads/images/tw_telegram.svg" width="80" />
+<div>
+<p class="tw-subtitle">Тицьни в <a class="tw-yellow" href="tg://resolve?domain=@TehnoWest ">Telegram</a> &ndash; ноут твій, як гарячий пиріжок!</p>
+
+<p class="tw-desc">Пиши нам напряму &ndash; обговоримо все!</p>
+</div>
+<a class="tw-btn" href="tg://resolve?domain=@TehnoWest ">Перейти у Telegram</a></div>
+
+<div class="tw-block tw-block-5"><img alt="icon" class="tw-icon" height="80" loading="lazy" src="/content/uploads/images/tw_instagram.svg" width="80" />
+<div>
+<p class="tw-subtitle">Клікни в <a class="tw-yellow" href="https://www.instagram.com/tehno_west">Instagram</a> &ndash; слідкуй за новинками з перчиком!</p>
+
+<p class="tw-desc">Не пропусти найсмачніше!</p>
+</div>
+<a class="tw-btn" href="https://www.instagram.com/tehno_west"><span>Перейти у Instagram</span></a> <img alt="img" class="tw-bg" height="456" loading="lazy" src="/content/uploads/images/tw_2.png" width="456" /></div>
+
+<div class="tw-block tw-block-6"><img alt="icon" class="tw-icon" height="80" loading="lazy" src="/content/uploads/images/tw_map-pin.svg" width="80" />
+<div>
+<p class="tw-subtitle">Наша адреса</p>
+</div>
+<a class="tw-btn" href="https:maps.app.goo.gl/vRJtfqd4d6nz1fCw5">Показати на мапі</a></div>
+</div>
+</div>
+</main>
+<script>
+        if (window.innerWidth > 900) {
+            document.querySelectorAll('.tw_call_me').forEach((item) => {
+                item.addEventListener('click', () => {
+                    document.querySelector('[data-modal="#call-me"]').click();
+                })
+            })
+        } else {
+            document.querySelectorAll('.tw_call_me').forEach((item) => {
+                item.addEventListener('click', () => {
+                    document.querySelector('[href="#menu"]').click();
+                    document.querySelector('[href="#callback-form"]').click();
+                })
+            })
+        }
+    
+    </script>

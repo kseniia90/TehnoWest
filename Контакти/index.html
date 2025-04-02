@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="tw-wrapper">
+            <div class="tw-container">
+
+                <div class="tw-block tw-block-1">
+                    <h1 class="tw-main-h">Контакти</h1>
+    
+                    <div class="tw-row">
+                        <a class="tw-link" href="tel:+380500550900">
+                            <span class="tw-col">
+                                <img src="./img/tw_phone.svg" alt="icon" width="80" height="80" class="tw-icon"> 
+                                <span>050-055-09-00</span>
+                            </span>
+                        </a>
+                        <a class="tw-link" href="mailto:TehnoWest88@gmail.com">
+                            <span class="tw-col">
+                                <img src="./img/tw_email.svg" alt="icon" width="80" height="80" class="tw-icon"> 
+                                <span>TehnoWest88@gmail.com</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tw-block tw-block-2">
+                    <p class="tw-subtitle">Передзвонити Вам?</p>
+                    <div class="tw-btn tw_call_me"><span>Замовити дзвінок</span></div>
+                </div>
+
+                <div class="tw-block tw-block-3">
+                    <img src="./img/tw_viber.svg" alt="icon" width="80" height="80" class="tw-icon"> 
+                    <div>
+                        <p class="tw-subtitle">Клацай у <a href="viber:chat?number=%2B380500550900" class="tw-yellow">Viber</a> – твій ноутбук на низькому старті!</p>
+                        <p class="tw-desc">Пиши запитання чи пропозиції – відповімо миттєво!</p>
+                    </div>
+                    <a href="viber:chat?number=%2B380500550900" class="tw-btn">Перейти у Viber</a>
+                    <img src="./img/tw_1.png" alt="img" width="456" height="456" class="tw-bg">
+                </div>
+
+                <div class="tw-block tw-block-4">
+                    <img src="./img/tw_telegram.svg" alt="icon" width="80" height="80" class="tw-icon"> 
+                    <div>
+                        <p class="tw-subtitle">Тицьни в <a href="tg:resolve?domain=@TehnoWest" class="tw-yellow">Telegram</a> – ноут твій, як гарячий пиріжок!</p>
+                        <p class="tw-desc">Пиши нам напряму – обговоримо все!</p>
+                    </div>
+                    <a href="tg:resolve?domain=@TehnoWest" class="tw-btn">Перейти у Telegram</a>
+
+                </div>
+
+                <div class="tw-block tw-block-5">
+                    <img src="./img/tw_instagram.svg" alt="icon" width="80" height="80" class="tw-icon"> 
+                    <div>
+                        <p class="tw-subtitle">Клікни в <a href="https:instagram.com/tehno_west" class="tw-yellow">Instagram</a> – слідкуй за новинками з перчиком!</p>
+                        <p class="tw-desc">Не пропусти найсмачніше!</p>
+                    </div>
+                    <a href="https:instagram.com/tehno_west" class="tw-btn"><span>Перейти у Instagram</span></a>
+                    <img src="./img/tw_2.png" alt="img" width="456" height="456" class="tw-bg">
+                </div>
+
+                <div class="tw-block tw-block-6">
+                    <img src="./img/tw_map-pin.svg" alt="icon" width="80" height="80" class="tw-icon"> 
+                    <div>
+                        <p class="tw-subtitle">Наша адреса</p>
+                    </div>
+                    <a href="https:maps.app.goo.gl/vRJtfqd4d6nz1fCw5" class="tw-btn">Показати на мапі</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Thanks popup -->
+        <!-- <div class="tw-popup-thanks active">
+            <div class="tw-popup-dialog">
+                <div class="tw-popup-content">
+                    <div class="tw-popup-body">
+                        <div class="tw-popup__title">
+                            <h2>Ваша заявка прийнята!</h2>
+                            <div class="tw-popup__close-thanks"><span class="hob__close-icon">×</span></div>
+                        </div>
+                        <p>Mайстер звяжеться з Вами найближчім часом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>         -->
+    </main>
+
+<script>
+    if (window.innerWidth > 900) {
+        document.querySelectorAll('.tw_call_me').forEach((item) => {
+            item.addEventListener('click', () => {
+                document.querySelector('[data-modal="#call-me"]').click();
+            })
+        })
+    } else {
+        document.querySelectorAll('.tw_call_me').forEach((item) => {
+            item.addEventListener('click', () => {
+                document.querySelector('[href="#menu"]').click();
+                document.querySelector('[href="#callback-form"]').click();
+            })
+        })
+    }
+
+</script>
+<!-- 
+    <script src="jquery.min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            $('.tw-accordion .tw-title').on('click', function (e) {
+                e.preventDefault();
+
+                if (!$(this).hasClass('accordion-active')) {
+                    $(this).closest('tw-accordion').find('.tw-content').slideUp(400);
+                    $(this).closest('tw-accordion').find('.tw-title').removeClass('accordion-active');
+                }
+
+                $(this).toggleClass('accordion-active');
+                $(this).next().slideToggle();
+            });
+        });
+
+        if (document.querySelector(".tw-popup-thanks") !== null) {
+
+            window.addEventListener("click", function (e) {
+
+                if (e.target.closest('.call-me__btn')) {
+                    e.preventDefault();
+                    document.querySelector(".tw-popup-thanks").classList.add("active");
+                    document.body.style.overflow = "hidden";
+                } else {
+                    if (e.target.closest('.tw-popup__close-thanks')) {
+                        e.preventDefault();
+                        document.querySelector(".tw-popup-thanks").classList.remove("active");
+                        document.body.style.overflow = "auto";
+                    }
+
+                    if (document.querySelector(".tw-popup-thanks.active") && !e.target.closest('.tw-popup-content')) {
+                        document.querySelector(".tw-popup-thanks").classList.remove("active");
+                        document.body.style.overflow = "auto";
+                    }
+                }
+            });
+        };
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
+.tw-wrapper a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tw-wrapper {
+    font-family: 'Roboto';
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 100% !important;
+    min-height: 100dvh;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.tw-container {
+    min-height: 100%;
+    /* max-width: 1470px;  */
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-main-h {
+    font-size: 48px !important;
+    line-height: 100% !important;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.tw-yellow {
+    color: #FFBF00 !important;
+}
+
+.tw-subtitle {
+    font-size: 32px !important;
+    font-weight: 700;
+    line-height: 100% !important;
+    margin: 0 !important;
+}
+
+.tw-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 20px !important;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: #fff !important;
+    background: #FFBF00;
+    border: 1px solid #FFBF00;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.tw-btn:hover,
+.tw-btn:focus {
+    background: #fff;
+    border: 1px solid #FFBF00;
+    color: #FFBF00 !important;
+}
+
+.tw-block {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tw-block-1 {
+    padding: 10px 20px;
+}
+
+.tw-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0;
+}
+
+.tw-lin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tw-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tw-block-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 57px 20px;
+    color: #ffffff;
+    background-color: #151515;
+}
+
+.tw-block-3,
+.tw-block-4,
+.tw-block-5,
+.tw-block-6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.tw-block-3,
+.tw-block-5 {
+    position: relative;
+}
+
+.tw-block-3 .tw-subtitle,
+.tw-block-4 .tw-subtitle,
+.tw-block-5 .tw-subtitle {
+    margin-bottom: 20px !important;
+}
+
+.tw-block-3 .tw-bg {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: -1;
+}
+
+.tw-block-4 {
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/tw_banner-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tw-block-5 .tw-bg {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: rotate(5deg);
+    z-index: -1;
+}
+
+.tw-block-6 {
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/tw_banner-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*popup start */
+
+.tw-popup-thanks {
+    font-family: 'Roboto';
+    display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 150;
+	background-color: rgba(0, 0, 0, .6);
+	transition: opacity 200ms ease-in;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.tw-popup-thanks.active {
+	display: block;
+}
+
+.tw-popup-dialog {
+	position: relative;
+	width: 550px;
+	min-height: 100vh;
+	padding: 20px 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tw-popup-content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 100%;
+	padding: 30px 40px 30px;
+	outline: 0;
+	border-radius: 12px;
+}
+ 
+.tw-popup-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    gap: 20px;
+	position: relative;
+	flex: 1 1 auto;
+}
+
+.tw-popup-thanks .tw-popup-body {
+    align-items: flex-start;
+    
+}
+
+.tw-popup-thanks h2 {
+	font-size: 32px;
+    font-weight: normal;
+}
+
+.tw-popup__title {
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+    gap: 20px;
+}
+
+.tw-popup__close-thanks .hob__close-icon {
+	display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: #b2b2b2;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tw-popup__close-thanks .hob__close-icon:hover {
+    color: #1c80c5;
+}
+
+.tw-popup p {
+    line-height: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+    .tw-popup.active {
+        overflow-y: auto;
+    }
+	.tw-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;
+		padding: 0;
+	}
+
+	.language-popup-dialog {
+		width: calc(100% - 30px);
+		min-height: 100%;
+		height: auto;   
+	}
+
+	.tw-popup-content {
+		padding: 20px 20px 50px;
+	}
+
+    .tw-popup h2 {
+        font-size: 24px;
+    }
+
+}
+/*popup end*/
+
+@media (max-width:1000px) {
+    .tw-block-3 .tw-bg {
+        width: 218px;
+        height: 218px;
+        right: -40px;
+        z-index: 1;
+    }
+
+    .tw-block-5 .tw-bg {
+        width: 250px;
+        height: 250px;
+        top: auto;
+        bottom: -20px;
+        left: -15px;
+        transform: rotate(-30deg);
+    }
+}
+
+@media (max-width: 768px) { 
+   
+.tw-wrapper {
+    font-size: 18px !important;
+}
+
+.tw-main-h {
+    font-size: 40px !important;
+}
+
+.tw-subtitle {
+    font-size: 26px !important;
+}
+
+.tw-btn {
+    font-size: 18px !important;
+}
+
+.tw-row {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.tw-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.tw-block-1 {
+    padding-bottom: 0;
+}
+
+.tw-block-2 {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    display: none;
+}
+
+.tw-block-3,
+.tw-block-4,
+.tw-block-5,
+.tw-block-6 {
+    gap: 40px;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.tw-block-3 {
+    padding-top: 40px;
+}
+
+.tw-block-5 .tw-bg {
+    width: 158px;
+    height: 158px;
+    top: auto;
+    bottom: -20px;
+    left: -15px;
+    transform: rotate(-30deg);
+}
+
+}
+
