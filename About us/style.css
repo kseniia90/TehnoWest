@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.layout-aside,
+.main-h,
+.heading.heading--xl {
+    display: none;
+}
+
+.wrapper,
+.layout-wrap {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.main {
+    overflow-x: hidden;
+}
+
+.breadcrumbs,
+.footer__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.breadcrumbs {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .breadcrumbs,
+    .footer__container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.layout {
+    margin: 0;
+}
+
+.header {
+    margin-bottom: 0;
+}
+
+.layout-main-inner {
+    padding-left: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
+
+.tw-wrapper a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+.tw-wrapper .tw-ab-img {
+    margin: 0;
+
+}
+
+.tw-wrapper {
+    font-family: 'Roboto';
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 120% !important;
+    min-height: 100dvh;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.tw-container {
+    min-height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-main-h {
+    font-size: 48px !important;
+    line-height: 100% !important;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 50px !important;
+}
+
+.tw-yellow {
+    color: #FFBF00 !important;
+}
+
+.tw-upper {
+    text-transform: uppercase !important;
+}
+
+.tw-ab-subtitle {
+    font-size: 42px !important;
+    font-weight: 700;
+    line-height: 117% !important;
+    margin: 0 auto !important;
+    text-align: center;
+}
+
+.tw-subtitle {
+    font-size: 32px !important;
+    font-weight: 700;
+    line-height: 38px !important;
+    margin: 0 !important;
+}
+
+.tw-mb-100 {
+    margin-bottom: 100px !important;
+}
+
+.tw-mb-25 {
+    margin-bottom: 25px !important;
+}
+
+.tw-ab-banner {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url('./img/tw_ab_ban1-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tw-ab-banner2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url('./img/tw_ab_ban2-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tw-ab-banner-container {
+    position: relative;
+    padding: 100px 20px;
+    color:#ffffff;
+    text-align: center;
+}
+
+.tw-ab-img.img_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, -63%);
+}
+
+.tw-ab-block1 .tw-ab-img.img_2 {
+    float: right;
+    margin-top: -200px !important;
+    margin-right: -80px !important;
+    margin-left: -90px !important;
+}
+
+.tw-gray-block {
+    padding: 25px 20px;
+    font-size: 32px !important;
+    line-height: 38px !important;
+    text-align: center;
+    color: #ffffff;
+    background: #444444;
+}
+
+.tw-ab-block2{
+    max-width: 1190px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.tw-ab-block3 {
+    padding: 0 240px;
+}
+
+.tw-ab-block3-content {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10%;
+    color: #ffffff;
+    background: #444444;
+    border-radius: 20px;
+}
+
+.tw-ab-img.img_4 {
+    width: 27% !important;
+    max-width: 196px !important;
+    min-width: 150px !important;
+    height: auto;
+}
+
+.tw-ab-img.img_5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-78%, 20%);
+} 
+
+.tw-ab-block4 .tw-ab-row:nth-child(odd) {
+    display: grid;
+    grid-template-columns: 1fr  minmax(200px, 18%);
+    align-items: center;
+    text-align: left;
+    gap: 18px;
+}
+
+.tw-ab-block4 .tw-ab-row:nth-child(even) {
+    display: grid;
+    grid-template-columns: minmax(200px, 18%) 1fr;
+    align-items: center;
+    text-align: right;
+    gap: 18px;
+}
+
+.tw-ab-block4 .tw-ab-row:nth-child(odd) .tw-ab-img {
+    margin-left: -60px !important;
+}
+
+.tw-ab-block4 .tw-ab-row:nth-child(even) .tw-ab-img {
+    margin-left: -50px !important;
+}
+
+.tw-ab-block5 {
+    max-width: 1190px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 24% 1fr;
+    align-items: center;
+    gap: 25px;
+}
+
+.tw-ab-block2 .tw-ab-img.img_3,
+.tw-ab-block5 .tw-ab-img.img_3 {
+    width: 100% !important;
+    height: auto;
+}
+
+@media (max-width: 1180px) {
+    .tw-ab-row .tw-ab-img {
+        width: 130% !important;
+        height: auto !important;
+    }
+
+    .tw-ab-block3 {
+        padding: 0 180px;
+    }
+
+    .tw-ab-block4 .tw-ab-row:nth-child(odd) .tw-ab-img {
+        margin-left: -30px !important;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .tw-ab-img.img_4 {
+        min-width: 130px !important;
+    }
+}
+
+@media (max-width: 830px) {
+    
+    .tw-ab-block3 {
+        padding: 0 30px;
+    }
+    .tw-ab-img.img_5 {
+        display: none;
+    }
+    .tw-ab-img.img_4 {
+        min-width: 160px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tw-wrapper {
+        font-size: 18px !important;
+    }
+
+    .tw-main-h {
+        font-size: 40px !important;
+    }
+
+    .tw-ab .tw-main-h {
+        margin-bottom: 40px !important;
+    }
+
+    .tw-ab-subtitle {
+        font-size: 35px !important;
+    }
+
+    .tw-subtitle {
+        font-size: 26px !important;
+        line-height: 30px !important;
+    }
+
+    .tw-mb-100 {
+        margin-bottom: 80px !important;
+    }
+    
+    .tw-mb-25 {
+        margin-bottom: 20px !important;
+    }
+    
+    .tw-ab-banner-container {
+        padding: 80px 20px;
+    }
+    
+    .tw-ab-img.img_1 {
+        width: 166px !important;
+        height: 166px !important;
+    }
+    
+    .tw-ab-block1 .tw-ab-img.img_2 {
+        width: 229px !important;
+        height: 229px !important;
+        float: right;
+        margin-top: -145px !important;
+        margin-right: -70px !important;
+        margin-left: -40px  !important;
+    }
+    
+    .tw-gray-block {
+        padding: 20px;
+        font-size: 26px !important;
+        line-height: 30px !important;
+    }
+    
+    .tw-ab-block2 {
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tw-ab-block2 .tw-ab-img.img_3 {
+        max-width: 138px !important;
+        margin: 0 auto !important;
+    }
+
+    .tw-ab-block3 {
+        padding: 0;
+        margin: 0 -20px;
+    }
+    
+    .tw-ab-block3-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 80px 20px;
+        border-radius: 0;
+    }
+    
+    .tw-ab-img.img_4 {
+        width: 196px !important;
+    }
+
+    .tw-ab-block4 .tw-ab-row:nth-child(odd) {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .tw-ab-block4 .tw-ab-row:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .tw-ab-block4 .tw-ab-row:nth-child(odd) .tw-ab-img,
+    .tw-ab-block4 .tw-ab-row:nth-child(even) .tw-ab-img {
+        margin-left: 0 !important;
+    }
+    
+    .tw-ab-block5 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .tw-ab-block5 .tw-ab-img.img_3 {
+        max-width: 230px !important;
+    }
+
+    .tw-ab-row .tw-ab-img.img_6 {
+        max-width: 186px !important;
+    }
+
+    .tw-ab-row .tw-ab-img.img_7 {
+        max-width: 280px !important;
+    }
+
+    .tw-ab-row .tw-ab-img.img_8 {
+        max-width: 198px !important;
+    }
+
+    .tw-ab-row .tw-ab-img.img_9 {
+        max-width: 186px !important;
+    }
+
+    .tw-ab-banner2 {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url('./img/tw_ab_ban2-bg_m.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+}
