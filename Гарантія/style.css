@@ -207,7 +207,7 @@ ul {
     float: left;
     margin-top: -70px !important;
     margin-right: 10px !important;
-    background: url('/content/uploads/images/te_gr_1.png') no-repeat;
+    background: url('./img/te_gr_1.png') no-repeat;
     background-position: center;
     background-size: contain;
 }
