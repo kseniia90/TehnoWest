@@ -30,6 +30,10 @@
     overflow-x: hidden;
 }
 
+.catalog__banners--bottom {
+    margin: 0;
+}
+
 .breadcrumbs,
 .footer__container {
     padding-left: 20px;
@@ -160,7 +164,7 @@ ul {
 }
 
 .tw-ab-banner2 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url('./img/tw_ab_ban2-bg.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), #171717 100%), url('./img/tw_ab_ban2-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -386,6 +390,7 @@ ul {
         gap: 20px;
         padding: 80px 20px;
         border-radius: 0;
+        text-align: center;
     }
     
     .tw-ab-img.img_4 {
@@ -438,8 +443,15 @@ ul {
         max-width: 186px !important;
     }
 
+    .tw-ab-banner {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url('./img/tw_ab_ban1-bg_m.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     .tw-ab-banner2 {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%), url('./img/tw_ab_ban2-bg_m.jpg');
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), #171717), url('./img/tw_ab_ban2-bg_m.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
