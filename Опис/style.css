@@ -238,13 +238,15 @@ ul {
     }
 
     .tw-ban {
-       flex-direction: column-reverse;
-       margin-bottom: 80px;
-    }
-
-    .tw-ban-content {
-        padding: 10px;
-    }
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
+        border-radius: 0;
+        margin: 0 -20px;
+     }
+ 
+     .tw-ban-content {
+         padding: 10px 20px;
+     }
 
     .tw-ban-title {
         display: block;
@@ -259,7 +261,7 @@ ul {
 
     .tw-ban-img-block>img {
         position: absolute;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .tw-ban-img-1 {
