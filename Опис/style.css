@@ -173,9 +173,12 @@ ul {
 .tw-ban-img-1 {
     bottom: -50px;
     right: 0;
+    width: 177px;
+    height: auto;
+    transform: scaleX(-1);
 }
 
-.tw-ban-img-1-l {
+.tw-ban-img-1-r {
     display: none;
 }
 
@@ -266,22 +269,18 @@ ul {
 
     .tw-ban-img-1 {
         max-width: 30%;
-        bottom: -70px;
+        width: 142px;
+        bottom: -80px;
         right: 0;
-    }
-
-    .tw-ban-img-1-r {
-        display: none;
-    }
-
-    .tw-ban-img-1-l {
-        display: block;
+        transform: none;
     }
 
     .tw-ban-img-2 {
         max-width: 35%;
+        width: 160px;
         bottom: -10px;
         left: -10px;
+        transform: scaleX(-1);
     }
    
 }
